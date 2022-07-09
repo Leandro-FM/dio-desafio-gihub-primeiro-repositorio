@@ -1,0 +1,20 @@
+ssh-keygen -t ed25519 -c <email do usuario> // primeiro comando no terminal bash
+
+Quando solicitar uma senha aperte enter e nao registre senha 
+
+Será mostrado o caminho onde a chave sera aramazenada em seu pc 
+
+cat id_ed25519.pub // Este comando ira mostrar a sua chave publica no terminal bash 
+
+Coloque o codigo da chave publica gerada no gitHub 
+
+eval $(ssh-agente -s) // Este comando cria o agente ssh que ira administrar as chavs do git 
+
+ssh=add id_ed25519 // Este comando informa o path da chave privada para a conexao criptografada do git pelo openssh, porem deve estar dentro do diretori corrente .ssh 
+
+
+
+
+
+
+
